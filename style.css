@@ -1,0 +1,25 @@
+#oladimeji{
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    width: 500px;
+    margin-left: 25%;
+    
+
+}
+
+#general{
+    text-align: center;
+}
+#Text{
+    color: white;
+}
+
+body{
+    background: black;
+    text-align: center;
+    font-family: 'Borel', cursive;
+}
+h1{
+    text-transform: capitalize;
+}
