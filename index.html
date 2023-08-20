@@ -2,38 +2,99 @@
 <html>
 
 <head>
-  <title>CSS Positioning Exercise</title>
+  <title>Chessboard</title>
   <style>
     /* Write your code here */
-    .blue-box{ background-color: blue;
-      height: 300px;
-      width: 500px;
-      position: relative;
-      top: 200px;
-      left: 200px;
-      z-index: -1;
-
+    /* Each square should be 100px by 100px */
+    /* My colours for white: #f0d9b5, black: #b58863 */
+    .container > * {
+      height: 100px;
+      width: 100px;
+      
+      
     }
+    .white{background-color:#f0d9b5;}
+    .black{background-color:#b58863 ;}
 
-    .blue-box > .red-circle {
-      background-color: red;
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-      position:absolute;
-      top: 150px;
-      left: 250px;
-      z-index: 150;
+    .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-row-gap: 0;
+      grid-column-gap: 0;
+      width: 800px;
     }
   </style>
+  
 </head>
 
 <body>
-  <div class="blue-box">
-    <div class="red-circle">
-    </div>
+  <div class="container">
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
   </div>
-
 </body>
 
 </html>
