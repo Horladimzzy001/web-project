@@ -1,99 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Chessboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
   <style>
-    /* Write your code here */
-    /* Each square should be 100px by 100px */
-    /* My colours for white: #f0d9b5, black: #b58863 */
-    .container > * {
-      height: 100px;
-      width: 100px;
-      
-      
-    }
-    .white{background-color:#f0d9b5;}
-    .black{background-color:#b58863 ;}
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
 
-    .container{
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .outer{
+      height: 748px;
+      width: 748px;
+      background-color: black;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-row-gap: 0;
-      grid-column-gap: 0;
-      width: 800px;
+      gap: 9px;
+      grid-template-rows: 414px auto 20px;
+      grid-template-columns: 320px 315px 50px;
+    }
+    .lives{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .red{
+      background-color: red;
+      height: 414px;
+      width: 320px;
+    }
+    .white1{
+      background-color: #F0F1EC;
+      grid-column: span 2;
+    }
+    .white2{
+      background-color: #F0F1EC;
+      }
+    .white3{
+      background-color: #F0F1EC;
+      }
+    .flex1-ver{
+      display: flex;
+      flex-direction: column;
+    }
+    .blue{
+      background-color: #004592;
+      height: 130px;
+      width: 50px;
+    }
+    .whito{
+      background-color: #F0F1EC;
+      height: auto;
+      width: auto;
     }
   </style>
-  
 </head>
 
 <body>
-  <div class="container">
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
+  <!-- Write your HTML here -->
+<div class="lives">
+  <div class="outer">
+    
+    <div class="box red"></div>
+    <div class="box white1"></div>
+    <div class="box white2"></div>
+    <div class="box white3"></div>
+    <div class="box flex1-ver">
+      <div class="blue"></div>
+      <div class="whiteo"></div>
+    </div>
+    <div class="box whitedown1"></div>
+    <div class="box yellow-flex2"></div>
+    <div class="box bluedown"></div>
+    
+    <!-- remove the box whitespot because white low 4 spans there -->
+    
+  </div>
+  
+
   </div>
 </body>
 
