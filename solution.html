@@ -1,61 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flex Direction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <style>
-    .container {
-      color: white;
-      border: 5px solid gold;
-      display: inline-flex;
-      flex-direction: column;
-    }
-
-    .container > * {
-      flex-basis: 100px;
-    }
-
-    .red {
-      background-color: #eb4d4b;
-    }
-
-    .orange {
-      background-color: #f0932b;
-    }
-
-    .yellow {
-      background-color: #f6e58d;
-    }
-
-    .green {
-      background-color: #6ab04c;
-    }
-
-    .blue {
-      background-color: #4834d4;
-    }
-
-    .indigo {
-      background-color: #30336b;
-    }
-
-    .purple {
-      background-color: #be2edd;
+    .flex-container {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <div class="red">Red</div>
-    <div class="orange">Orange</div>
-    <div class="yellow">Yellow</div>
-    <div class="green">Green</div>
-    <div class="blue">Blue</div>
-    <div class="indigo">Indigo</div>
-    <div class="purple">Purple</div>
+  <div class="flex-container">
+    <div class="card" style="width: 18rem;">
+      <img src="./flower.jpg" class="card-img-top" alt="sunflower">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
   </div>
 </body>
 
