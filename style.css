@@ -1,16 +1,28 @@
-/* Write your code here: */
-h1, h2 {
-    color: blueviolet;
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
 }
 
-.box > p {
-    color: firebrick;
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.box li{
-    color: blue
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
 }
 
-.box.done{
-    color:seagreen
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
 }
