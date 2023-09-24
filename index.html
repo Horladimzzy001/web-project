@@ -3,92 +3,32 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mondrian Project</title>
+  <title>CSS Box Model</title>
   <style>
-    /* 
-    Write your CSS here 
-    Gap Colour: #000
-    White: #F0F1EC
-    Red: #E72F24
-    Black: #232629
-    Blue: #004592
-    Yellow: #F9D01E
+    /* Write your CSS code here */
 
-    For dimensions, see dimensions.png image.
-    HINT: Remember you can't change the properties of grid lines.
-    But grid lines are transparent!
-    */
-
-    .outer{
-      height: 748px;
-      width: 748px;
-      background-color: black;
-      display: grid;
-      gap: 9px;
-      grid-template-rows: 414px auto 20px;
-      grid-template-columns: 320px 315px 50px;
-    }
-    .lives{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .red{
-      background-color: red;
-      height: 414px;
-      width: 320px;
-    }
-    .white1{
-      background-color: #F0F1EC;
-      grid-column: span 2;
-    }
-    .white2{
-      background-color: #F0F1EC;
-      }
-    .white3{
-      background-color: #F0F1EC;
-      }
-    .flex1-ver{
-      display: flex;
-      flex-direction: column;
-    }
-    .blue{
-      background-color: #004592;
-      height: 130px;
-      width: 50px;
-    }
-    .whito{
-      background-color: #F0F1EC;
-      height: auto;
-      width: auto;
-    }
   </style>
 </head>
 
 <body>
-  <!-- Write your HTML here -->
-<div class="lives">
-  <div class="outer">
-    
-    <div class="box red"></div>
-    <div class="box white1"></div>
-    <div class="box white2"></div>
-    <div class="box white3"></div>
-    <div class="box flex1-ver">
-      <div class="blue"></div>
-      <div class="whiteo"></div>
-    </div>
-    <div class="box whitedown1"></div>
-    <div class="box yellow-flex2"></div>
-    <div class="box bluedown"></div>
-    
-    <!-- remove the box whitespot because white low 4 spans there -->
-    
-  </div>
-  
 
-  </div>
+
+  <!-- TODOs:
+1. Create 3 Boxes using the div element.
+2. Set their sizes to 200px heigh by 200px wide.
+3. Set different background colors for each of the boxes (I used cadetblue, gold and indianred).
+4. Add a paragraph <p> element into the first div and add the following words:
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+    id magna pulvinar, ultricies lorem id, vehicula elit. Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+    dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.
+5. Set the 1st div to have 20px padding all around with a black 10px border.
+6. Fix the style of the <p> element to remove all margins.
+Hint: Use the CSS inspector in Chrome.
+7. Set the 2nd div to have a 20px border on top and bottom and 10px border left and right. (See goal image)
+8. Set the 3rd div to have a 10px border 
+9. Set the margins for the divs so that each box corner touches the other. (See the goal image)
+-->
+
 </body>
 
 </html>
